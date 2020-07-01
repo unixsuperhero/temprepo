@@ -27,7 +27,10 @@
   - `rake db:setup`
   - `rake db:migrate`
 - setup devise
-  - add `gem 'devise'` to Gemfile
+  - `echo >>Gemfile`
+  - `echo '# Gems added post-rails new' >>Gemfile`
+  - `gem 'devise'`
+  - `git add --all; git commit -m 'add devise to Gemfile'`
   - `bundle install`
   - `rbenv rehash`
   - `rails g devise:install`
